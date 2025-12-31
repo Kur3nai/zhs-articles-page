@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'Garet';
+    src: url('../font/Garet-Book.woff') format('woff');
+    src: url('../font/Garet-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garet-ExtraBold';
+    src: url('../font/Garet-Extrabold.woff') format('woff');
+    src: url('../font/Garet-Extrabold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 16px; 
+}
+
+body {
+    background-image: url("../images/project-120/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Garet';
+    line-height: 1.4;
+    position: static;
+}
+
+
+h2, p{
+    padding: 0;
+    margin: 0;
+    font-size: clamp(15px, 1.2vw, 17px);
+    font-weight: 600;
+}
+h2{
+    font-family: Garet-Extrabold;
+}
+.bold{
+    font-family: Garet-Extrabold;
+    font-size: 1.3vw;
+}
+.main-container {
+    max-width: 100%;
+    height: auto;
+    padding: 10px 20px; 
+    position: relative;
+    margin: auto 20px;
+    box-sizing: border-box;
+}
+
+.content-area, .content2-area {
+    padding: 1vh 0;
+    margin: auto;
+    max-width: 90%;
+    position: relative;
+}
+
+
+.header-area {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    gap: 10px;
+}
+
+.header2-area {
+    display: flex;
+    padding: 0 64px;
+    margin: 0;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+
+.logo { max-width: 110px; height: auto; margin-bottom: 20px; gap: 20px; }
+.latestNews { max-width: 110px; height: auto;  }
+.logo2 { max-width: 110px; height: auto;   }
+.invLogo { max-width: 19vw; height: auto;  }
+
+.project120-triangle {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 0 2vw 8vw 2vw;
+    position: relative;
+}
+
+.triangle {
+    display: block;
+    max-width: 70%;
+    height: auto;
+}
+
+.rainbow {
+    max-width: 20%;
+    min-width: 80px;
+    height: auto;
+    position: absolute;
+    bottom: -15px;
+    left: -10px;
+    display: block;
+}
+
+.icon {
+    max-width: 100%; 
+    height: auto;
+    object-fit: cover;
+    display: block;
+    position:relative;
+    object-position: center top;
+}
+
+.grid-item3 .icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.text-area {
+    position: relative;
+}
+.text-area p {
+    padding-bottom: 5px;
+    line-height: 1.5;
+}
+
+.project120-triangle p {
+    position: absolute;
+    bottom: -50px;
+    display: block; 
+}
+
+.rainTriP p{
+    font-size: clamp(15px, 1.2vw, 17px);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 100%;
+    margin:auto;
+    
+}
+
+
+.grid-item1 { background-color: #f4cbb4; }
+.grid-item2 { background-color: #e7ebec; }
+.grid-item4 { 
+    background-color: #f7cbb8; 
+    grid-column: 1 / -1; 
+    text-align: center ;
+}
+
+.grid-item4 p {
+    font-weight: 800;
+    word-wrap: break-word;
+}
+
+
+.grid-item3 {
+    background-color:#e8e6de;
+    width: 100%;
+    grid-column: 1 / -1; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+     
+}
+
+
+.grid-container p, .grid-container h2 {
+    padding: 10px;
+    font-size: clamp(14px, 1vw, 17px);
+}
+.grid-container ul li{
+    font-size: clamp(14px, 1vw, 17px);
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+
+.grid-container h2 {
+    padding-bottom: 0;
+}
+
+.grid-item2 p, ul{
+    margin:0;
+}
+.page5{
+    width:100%;
+    margin: 15px auto;
+    margin-bottom: 50px;
+}
+
+.email-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.fold1, .fold2 {
+    display: none;
+}
+
+@media (max-width: 987px) {
+    .main-container {
+        margin: auto; 
+        padding: 10px;
+    }
+
+    .grid-item1,
+    .grid-item2,
+    .triangle {
+        min-width: 0;
+        
+    }
+
+    ul li{
+        text-align: left;
+        
+    }
+
+    .project120-triangle p {
+        font-size: 12px; 
+        bottom: -20px; 
+    }
+    .triangle{
+        max-width: 70%;
+    }
+    .icon{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+   
+    .page5{
+        width:80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+        margin: 100px auto ;
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+    }
+    .rainTriP p{
+    font-size: clamp(14px, 1vw, 16px);
+
+}
+
+    .grid-item1,
+    .grid-item2,
+    .triangle {
+        min-width: 0;
+        
+    }
+    .grid-item1,.grid-item2{
+        display: grid;
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+
+    ul li{
+        text-align: left;
+    }
+
+    .project120-triangle p {
+        font-size: 12px; 
+        bottom: -20px; 
+    }
+    .triangle{
+        max-width: 100%;
+    }
+    .icon{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .header2-area{
+        align-items: center;
+    }
+
+    .linkZHS a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    margin: 0 auto 40px auto;
+}
+}
+@media (max-width: 480px){
+    h2, p{
+        font-size: clamp(14px, 1vw, 16px);
+    }
+
+    .header2-area{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-container {
+        margin: 100px auto ;
+        margin-top: 0;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin:auto;
+
+    }
+
+    .grid-item1,
+    .grid-item2,
+    .triangle {
+        min-width: 0;
+        
+    }
+    .grid-item1,.grid-item2, .grid-item3{
+        display: grid;
+        grid-template-columns: 1fr; 
+        text-align: center;
+        
+    }
+
+    ul li{
+        text-align: left;
+    }
+
+    .project120-triangle p {
+        
+        bottom: -20px; 
+    }
+    .triangle{
+        max-width: 100%;
+        min-width: 300px;
+    }
+    .icon{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .rainTriP{
+        font-size: clamp(12px, 1vw, 16px);
+    }
+
+    .bold{
+        font-size: 3.3vw;
+    }
+
+    .invLogo {
+        max-width: 45vw;
+        height: auto;
+    }
+    
+}
+
+@supports  (-webkit-touch-callout: none) {
+    @media (max-width: 480px){
+        h2, p{
+            font-size: clamp(14px, 1vw, 16px);
+        }
+
+        .header2-area{
+            flex-direction: column;
+            align-items: center;
+        }
+        .main-container {
+            margin: 100px auto ;
+            margin-top: 0;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin:auto;
+
+        }
+
+        .grid-item1,
+        .grid-item2,
+        .triangle {
+            min-width: 0;
+            
+        }
+        .grid-item1,.grid-item2, .grid-item3{
+            display: grid;
+            grid-template-columns: 1fr; 
+            text-align: center;
+            
+        }
+
+        ul li{
+            text-align: left;
+        }
+
+        .project120-triangle p {
+            
+            bottom: -20px; 
+        }
+        .triangle{
+            max-width: 100%;
+            min-width: 350px;
+        }
+        .icon{
+            width: 100%;
+            height: 20svh;
+            object-fit: cover;
+        }
+
+        .bold{
+            font-family: Garet-Extrabold;
+            font-size: 3vw;
+        }
+
+        .grid-item3 .icon{
+            width: 100%;
+            height: 20svh;
+            object-fit: cover;
+        }
+
+        .rainTriP{
+            font-size: clamp(12px, 1vw, 16px);
+        }
+
+        .invLogo { max-width: 45vw; height: auto;  }
+        
+    }
+}
+

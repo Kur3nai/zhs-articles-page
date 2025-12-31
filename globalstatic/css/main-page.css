@@ -1,0 +1,474 @@
+/* ================= WEB SETTINGSS ================= */
+@font-face {
+    font-family: 'Garet';
+    src: url('../font/Garet-Book.woff') format('woff');
+    src: url('../font/Garet-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garet ExtraBold';
+    src: url('../font/Garet-Extrabold.woff') format('woff');
+    src: url('../font/Garet-Extrabold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../font/leaguespartan-bold.woff') format('woff');
+    src: url('../font/leaguespartan-bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Garet';
+    src: url('../fonts/Garet-Heavy.woff2') format('woff2'),
+         url('../fonts/Garet-Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+html, 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= IMAGES ======================= */
+
+.logo {
+    position: absolute;
+    top: 10vh;
+    right: 6vw;
+    width: 19vw;
+    display: inline-block;
+    z-index: 3;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.bars {
+    position: absolute;
+    top: 20vh;
+    right: 15vw;
+    width: 0.6vw;
+    display: inline-block;
+    z-index: 2;
+}
+
+.bars img {
+    width: 100%;
+    height: auto;
+}
+
+/* ================= ARTICLE 1 & 2 ================= */
+
+.article1,
+.article2 {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article1 {
+    background: url("../images/main-page/web-sleep.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article2 {
+    background: url("../images/main-page/man-sleepwitheyewear.png") no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.content1,
+.content2 {
+    width: 37vw;
+    margin-left: 11vw;
+    margin-right: auto;    
+}
+
+.text-side-black {
+    max-width: 40vw; 
+    color: #222;
+}
+
+
+.text-side-white {
+    max-width: 40vw; 
+    color: #fff;
+}
+
+.text-side-black h1,
+.text-side-white h1 {
+    font-family: 'Garet ExtraBold';
+    line-height: 1.1;
+    margin-bottom: 1.4rem;
+}
+
+.first-line {
+    font-size: 5.4vw;
+}
+
+.second-line {
+    font-size: 4vw;
+}
+
+.first-line-2 {
+    font-size: 5.4vw;
+}
+
+.second-line-2 {
+    font-size: 6vw;
+}
+
+.text-side-black p ,
+.text-side-white p {
+    font-family: 'Garet';
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+}
+
+.read-more {
+    font-size: 1.7vw;
+    font-family: Garet ExtraBold;
+    color: #5baa39;
+    font-style: italic;
+}
+
+/* ================ Article 3================= */
+
+.article3 {
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 100%;
+    padding: 0rem 0vw;
+    background: url("../images/main-page/background.png") top center / cover no-repeat;
+}
+
+.top-area {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 0 11vw;
+    gap: 1vw; 
+}
+
+.top-text {
+    font-size: 2.3vw;
+    font-family: Garet Extrabold;
+    letter-spacing: 0.3rem;
+    line-height: 1.1;
+}
+
+.top-image img {
+    width: 18vw;
+    height: auto;
+    transform: scale(235%) translate(0vw, -8vh);
+}
+
+
+.middle-area {
+    padding: 0 11vw;
+    font-family: Garet;
+    font-size: 1.6vw;
+}
+
+.green-banner {
+    margin-top: 2rem;
+    padding: 1rem 1.2rem;
+    background: #5baa39;
+    color: white;
+    font-weight: bold;
+    border-radius:0 0 2rem 2rem;
+}
+
+.bottom-area {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 11vw;
+    font-family: Garet;
+}
+
+.left-box {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.triangle {
+    width: 100%;
+    height: 300px;
+    background: url("../images/main-page/infotriangle.png") center / contain no-repeat;
+}
+
+.right-box {
+    max-width: 310px;
+    font-size: 1.4vw;
+    line-height: 1.5;
+    text-align: left;
+    padding-top: 2vh;
+}
+
+.link {
+    font-family: Garet;
+    text-decoration: none;
+    color: #ffe15c;
+}
+
+/* =============== FOOTER ================== */
+
+.footer-wrapper {
+    background: #eae7e7;
+}
+
+.footer {
+    background: #6dbd1e;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Garet;
+    letter-spacing: 0.2vw;
+}
+
+.footer a {
+    color: #fff;
+}
+
+/* ================= IPAD ================= */
+@media (max-width: 768px) {
+    /* GENERAL RESET: full width, centered */
+    .article1,
+    .article2 {
+        display: block;
+        height: auto;
+        min-height: 100vh;
+        background: none;
+    }
+
+    /* IMAGE BANNER HEIGHT */
+    .article1::before,
+    .article2::before {
+        content: "";
+        display: block;
+        width: 100%;
+    }
+
+    .article1 .bg-image {
+        background: url("../images/main-page/mobile-sleep.webp");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 50vh;
+        mask-image: linear-gradient(
+            to bottom,
+            rgba( 0, 0, 0, 1) 80%,
+            rgba( 0, 0, 0, 0) 100%
+        );
+    }
+
+    .article2 .bg-image {
+        background: url("../images/main-page/man-sleepwitheyewear.png");
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        position: absolute;
+        height: 50vh;
+        mask-image: linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 5%, 
+            rgba(0, 0, 0, 1) 61%, 
+            rgba(0, 0, 0, 0) 97%);
+    }
+
+    /* TEXT CONTAINER */
+    .content1 {
+        width: 85vw;
+        margin: 0 auto;
+        padding: 6vh 0 10vh;
+        text-align: center;
+    }
+
+    .content2 {
+        width: 85vw;
+        margin: 0 auto;
+        padding: 48vh 0 10vh;
+        text-align: center;
+    }
+
+    .text-side-black,
+    .text-side-white {
+        max-width: 100%;
+    }
+
+    .first-line,
+    .first-line-2 {
+        font-size: 9vw;
+    }
+
+    .second-line,
+    .second-line-2 {
+        font-size: 7vw;
+    }
+
+    .text-side-black p,
+    .text-side-white p {
+        font-size: 1.1rem;
+    }
+
+    .text-side-white {
+        color: #000;
+    }
+
+    .read-more {
+        font-size: 2.5vw;
+    }
+
+    /* ARTICLE 3 RESET */
+    .article3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        background-size: contain;
+        background: none;
+    }
+
+    .top-area {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0;
+    }
+
+    .top-image img {
+        transform: none;
+        width: 45vw;
+        margin-bottom: 1rem;
+    }
+
+    .top-text {
+        font-size: 4vw;
+        letter-spacing: 0.1rem;
+        width: 75vw;
+        margin-bottom: 0;
+    }
+
+    /* TRIANGLE + TEXT STACK */
+    .bottom-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+        margin-top: 5vh;
+        padding: 0;
+        text-align: center;
+    }
+
+    .middle-area {
+        font-size: 2.6vw;
+    }
+
+    .triangle {
+        height: 200px;
+        width: 65vw;
+        background-size: contain;
+        transform: translate(10vw);
+    }
+
+    .right-box {
+        max-width: none;
+        width: 75vw;
+        font-size: 3vw;
+        line-height: 1.4;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    /* ============================= FOOTER ============================= */
+
+    .footer {
+        font-size: 2vw;
+    }
+
+    /* ================ HIDDEN ELEMENTS & POSITION CHANGE ================ */
+
+
+    .logo {
+        top: 9vh;
+        right: 6vw;
+    }
+
+    .bars {
+        display: none;
+    }
+
+}
+
+
+/* ====================== MOBILE VIEW ====================== */
+
+@media (max-width: 390px) {
+
+    .content1 {
+        padding: 6vh 0 5vh;
+    }
+
+    .content2 {
+        padding: 48vh 0 0vh;
+    }
+
+    .middle-area {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .article3 {
+        background: none;
+    }
+
+
+    .top-image img {
+        width: 60vw;
+    }
+
+    .logo {
+        width: 30vw;
+    }
+    
+    .triangle {
+        height: 150px;
+        width: 80vw;
+        margin-right: 11svw;
+        margin-left: auto;
+        background: url("../images/main-page/infotriangle.webp") center / contain no-repeat;
+    }
+
+    .read-more {
+        font-size: 4svw;
+    }
+
+    .article3 .read-more {
+        font-size: 3.5svw;
+    }
+}

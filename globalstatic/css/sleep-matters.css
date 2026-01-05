@@ -31,13 +31,20 @@ body{
     background-color: #efecec !important;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;        
+    position: relative;   
+}
+
+
 /* =================== IMAGE SETTINGS =================== */
 
 .logo {
     position: absolute;
-    top: 3vh;
-    left: 8vw;
-    width: 19vw;
+    top: 3rem;
+    left: 8rem;
+    width: 19rem;
     display: inline-block;
     z-index: 3;
 }
@@ -49,8 +56,8 @@ body{
 
 .line {
     position: absolute;
-    top: 15vh;
-    width: 56vw;
+    top: 8rem;
+    width: 45rem;
     display: inline-block;
     z-index: 3;
 }
@@ -65,9 +72,9 @@ body{
 .swoosh3,
 .swoosh4 {
     position: absolute;
-    top: 198.9vh;
-    right: 27vw;
-    width: 122vw;
+    top: 198.9rem;
+    right: 27rem;
+    width: 122rem;
     display: inline-block;
     z-index: 0;
     overflow: hidden;
@@ -82,42 +89,42 @@ body{
 }
 
 .swoosh1 {
-    top: 113vh;
-    right: 37vw;
-    width: 57vw;
+    top: 46rem;
+    right: 34rem;
+    width: 35rem;
     transform: rotate(106deg) scaleY(-1);
     transform-origin: center;
     z-index: 1;
 }
 
 .swoosh2 {
-    top: 137vh;
-    right: 64vw;
-    width: 42vw;
+    top: 64rem;
+    right: 50rem;
+    width: 29rem;
     transform-origin: center;
 }
 
 .swoosh3 {
-    top: 118vh;
-    right: -8vw;
-    width: 77vw;
+    top: 45rem;
+    right: -4rem;
+    width: 39rem;
     transform: rotate(293deg) scaleY(-1);
     transform-origin: center;
 }
 
 .swoosh4 {
-    top: 193vh;
-    right: 35vw;
-    width: 76vw;
-    transform: rotate(165deg);
+    top: 96rem;
+    right: 43rem;
+    width: 37rem;
+    transform: rotate(170deg);
     transform-origin: center;
 }
 
 /* ================= ARTICLE HEADER ================= */
 
 .article-header {
-    width: 100vw;
-    height: 100vh;
+    width: 75rem;
+    height: 45rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -127,19 +134,20 @@ body{
 .article-header {
     background: url("../images/sleep-matters/web-sleep.png");
     background-size: cover;
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
+    max-width: 1200px;
 }
 
 .content1 {
-    width: 37vw;
-    margin-left: 7vw;
+    width: 28rem;
+    margin-left: 6rem;
     margin-right: auto;
-    padding-top: 20vh; 
+    padding-top: 2rem;
 }
 
 .text-side-black {
-    max-width: 40vw; 
+    max-width: 40rem; 
     color: #222;
 }
 
@@ -150,11 +158,11 @@ body{
 }
 
 .first-line {
-    font-size: 4.4vw;
+    font-size: 4rem;
 }
 
 .second-line {
-    font-size: 3.5vw;
+    font-size: 3rem;
 }
 
 .text-side-black p {
@@ -165,7 +173,7 @@ body{
 }
 
 .read-more {
-    font-size: 1.7vw;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #5baa39;
 }
@@ -174,11 +182,11 @@ body{
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(3, 28.9vw);
-    grid-template-rows: repeat(4, 25vh);
-    column-gap: 1.5vw;
-    row-gap: 2vh;
-    padding: 7vh 5vw;
+    grid-template-columns: repeat(3, 23rem);
+    grid-template-rows: repeat(4, 12rem);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 4rem 2rem;
     box-sizing: border-box;
     place-items: center;
     justify-content: center;
@@ -189,19 +197,18 @@ body{
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content: space-evenly; 
-    margin-top: 20vh; 
-    padding-bottom: 60px;
+    margin-top: 2rem; 
 }
 
 .title {
     font-family: Garet ExtraBold;
-    font-size: 1.9vw;
+    font-size: 1.5rem;
 }
 
 .text-heading,
 .text-body {
     font-family: Garet;
-    font-size: 1.2vw;
+    font-size: 1rem;
 }
 
 .text-heading {
@@ -231,20 +238,20 @@ body{
 .div11,
 .div12,
 .div13 {
-    max-width: 20vw;
-    font-size: 1.4vw;
+    max-width: 20rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     text-align: left;
-    padding-top: 2vh;
+    padding-top: 2rem;
 }
 
 .div2 {
-    max-width: 25vw;
-    font-size: 1.4vw;
+    max-width: 25rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     text-align: left;
-    padding-top: 2vh;
-    padding-left: 5vw;
+    padding-top: 2rem;
+    padding-left: 1rem;
 }
 
 .div6,
@@ -261,15 +268,15 @@ body{
 }
 
 .div1 {
-    transform: translate(0, 7vh);
+    transform: translate(0, 7rem);
 }
 
 .div10,
 .div11,
 .div12,
 .div13 {
-        max-width: 14vw;
-        padding: 0 5vw;
+        max-width: 14rem;
+        padding: 0 2rem;
 }
 
 .bold-text {
@@ -280,7 +287,34 @@ body{
     display: none;
 }
 
+@media (max-width: 1050px) {
+
+    .title {
+        font-size: 1.5vw;
+    }
+    .parent {
+        grid-template-columns: repeat(3, 30vw);
+        grid-template-rows: repeat(4, 18vh);
+    }
+
+    .div10, .div11, .div12, .div13 {
+        max-width: 21vw;
+        padding: 0 0rem;
+    }
+
+    .text-heading, .text-body {
+        font-size: 1.4vw;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .logo {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 9rem;
+    }
 
     .line {
         top: 9vh;
@@ -320,6 +354,7 @@ body{
         height: auto;
         min-height: 100vh;
         background: none;
+        max-width: fit-content;
     }
 
     /* IMAGE BANNER HEIGHT */
@@ -344,11 +379,12 @@ body{
 
     .content1 {
         width: 85vw;
-        margin: 0 auto;
         padding: 6vh 0 10vh;
         text-align: center;
         justify-self: center;
         text-align: center;
+        margin-left: 2rem;
+        margin-right: auto;
     }
 
     .text-side-black {
@@ -414,7 +450,7 @@ body{
     .div13 {
         justify-self: center;
         text-align: center;
-        max-width: 30vw;
+        max-width: 10rem;
         padding: 0;
     }
 
@@ -460,11 +496,15 @@ body{
 
     .fold1,
     .fold2 {
-        width: 40vw;
+        width: 11rem;
     }
 
     .fold1 {
-        transform: translate(0vw, -30vh) rotate(180deg);
+        transform: translate(0vw, -21rem) rotate(180deg);
+    }
+
+    .fold2 {
+        transform:  scaleY(-1);
     }
 
 }
@@ -500,11 +540,12 @@ body{
     }
     
     .parent {
-        grid-row-gap: 4vh;
+        grid-row-gap: 1rem;
+        grid-column-gap: 1rem;
     }
 
     .text-heading, .text-body {
-        font-size: 2.9vw;
+        font-size: 1rem;
     }
 
     .text-heading {
@@ -524,6 +565,8 @@ body{
 
 @media (max-width: 391px) {
     .logo {
-        width: 30vw;
+        width: 7rem;
+        top: 1rem;
+        left: 2rem;
     }
 }

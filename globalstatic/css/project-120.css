@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'Garet';
-    src: url('../font/Garet-Book.woff') format('woff');
-    src: url('../font/Garet-Book.woff2') format('woff2');
+    font-family: 'Garet', sans-serif;
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Book.woff') format('woff');
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Book.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Garet-ExtraBold';
-    src: url('../font/Garet-Extrabold.woff') format('woff');
-    src: url('../font/Garet-Extrabold.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'Garet-ExtraBold', sans-serif;
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Extrabold.woff') format('woff');
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Extrabold.woff2') format('woff2');
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -18,13 +18,13 @@ html {
     font-size: 16px; 
 }
 
-body {
-    background-image: url("../images/project-120/bg.png");
+.main-container {
+    background-image: url("https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/images/project-120/bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    font-family: 'Garet';
+    font-family: 'Garet', sans-serif;
     line-height: 1.4;
     position: static;
 }
@@ -37,11 +37,12 @@ h2, p{
     font-weight: 600;
 }
 h2{
-    font-family: Garet-Extrabold;
+    font-family: Garet-Extrabold, sans-serif;
 }
 .bold{
-    font-family: Garet-Extrabold;
+    font-family: Garet-Extrabold, sans-serif;
     font-size: 1.3vw;
+    font-weight: 800;
 }
 .main-container {
     max-width: 100%;
@@ -427,7 +428,7 @@ h2{
         }
 
         .bold{
-            font-family: Garet-Extrabold;
+            font-family: Garet-Extrabold, sans-serif;
             font-size: 3vw;
         }
 

@@ -1,13 +1,13 @@
 body {
     margin: 0;
-    font-family: 'Garet', Arial, Helvetica;
+    font-family: 'Garet', Arial, Helvetica, sans-serif;
     background: #f4f4f4;
     color: #222;
 }
 
 /* ================= FONTS ================= */
 @font-face {
-    font-family: 'Garet';
+    font-family: 'Garet', sans-serif;
     src: url('../font/Garet-Book.woff2') format('woff2'),
          url('../font/Garet-Book.woff') format('woff');
     font-weight: 400;
@@ -15,7 +15,7 @@ body {
 }
 
 @font-face {
-    font-family: 'Garet';
+    font-family: 'Garet', sans-serif;
     src: url('../font/Garet-Heavy.woff2') format('woff2'),
          url('../font/Garet-Heavy.woff') format('woff');
     font-weight: 800;

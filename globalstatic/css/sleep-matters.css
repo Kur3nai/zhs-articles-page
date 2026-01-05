@@ -1,24 +1,24 @@
 /* ================= WEB SETTINGSS ================= */
 @font-face {
-    font-family: 'Garet';
-    src: url('../font/Garet-Book.woff') format('woff');
-    src: url('../font/Garet-Book.woff2') format('woff2');
+    font-family: 'Garet', sans-serif;
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Book.woff') format('woff');
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Book.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Garet ExtraBold';
-    src: url('../font/Garet-Extrabold.woff') format('woff');
-    src: url('../font/Garet-Extrabold.woff2') format('woff2');
+    font-family: 'Garet ExtraBold', sans-serif;
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Extrabold.woff') format('woff');
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Extrabold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'League Spartan';
-    src: url('../font/leaguespartan-bold.woff') format('woff');
-    src: url('../font/leaguespartan-bold.woff2') format('woff');
+    font-family: 'League Spartan', sans-serif;
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/leaguespartan-bold.woff') format('woff');
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/leaguespartan-bold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -125,7 +125,7 @@ body{
 }
 
 .article-header {
-    background: url("../images/sleep-matters/web-sleep.png");
+    background: url("https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/images/sleep-matters/web-sleep.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,7 +144,7 @@ body{
 }
 
 .header {
-    font-family: 'Garet ExtraBold';
+    font-family: 'Garet ExtraBold', sans-serif;
     line-height: 1.1;
     margin-bottom: 1.4rem;
 }
@@ -158,7 +158,7 @@ body{
 }
 
 .text-side-black p {
-    font-family: 'Garet';
+    font-family: 'Garet', sans-serif;
     font-size: 1.3rem;
     line-height: 1.5;
     margin-bottom: 1.6rem;
@@ -194,13 +194,13 @@ body{
 }
 
 .title {
-    font-family: Garet ExtraBold;
+    font-family: Garet ExtraBold, sans-serif;
     font-size: 1.9vw;
 }
 
 .text-heading,
 .text-body {
-    font-family: Garet;
+    font-family: Garet, sans-serif;
     font-size: 1.2vw;
 }
 
@@ -268,16 +268,46 @@ body{
 .div11,
 .div12,
 .div13 {
-        max-width: 14vw;
-        padding: 0 5vw;
+        max-width: 24vw;
+        padding: 0 2vw;
 }
 
 .bold-text {
-    font-family: Garet ExtraBold;
+    font-family: Garet ExtraBold, sans-serif;
+    font-weight: 800;
+}
+
+.fold {
+    transform: translateY(-2920px);
 }
 
 .mid-folds {
     display: none;
+}
+
+/* ================= FOOTER ================= */
+.footer-wrapper {
+    background: #eae7e7;
+}
+
+.footer {
+    background: #6dbd1e;
+    text-align: center;
+    padding: 28px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 50px 50px 0 0;
+}
+
+.footer span {
+    color: #ffe15c;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -330,7 +360,7 @@ body{
     }
 
     .article-header .bg-image {
-        background: url("../images/sleep-matters/web-sleep.png");
+        background: url("https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/images/sleep-matters/web-sleep.png");
         background-size: cover;
         background-position: center;
         width: 100vw;
@@ -430,7 +460,7 @@ body{
     }
     
     .text-heading, .text-body {
-        font-family: Garet;
+        font-family: Garet, sans-serif;
         font-size: 1.8vw;
     }
 
@@ -471,7 +501,13 @@ body{
 
 
 /* ====================== MOBILE VIEW ====================== */
-
+@media (max-width: 480px) {
+    .footer {
+        font-size: 16px;
+        padding: 22px 16px;
+        border-radius: 24px 24px 0 0;
+    }
+}
 @media (max-width: 450px) {
     .swoosh1 {
         top: 128vh;
@@ -508,7 +544,8 @@ body{
     }
 
     .text-heading {
-        font-family: Garet ExtraBold;
+        font-family: Garet ExtraBold, sans-serif;
+        font-weight: 800;
     }
 
     .title {

@@ -1,32 +1,32 @@
 /* ================= WEB SETTINGSS ================= */
 @font-face {
-    font-family: 'Garet';
-    src: url('../font/Garet-Book.woff') format('woff');
-    src: url('../font/Garet-Book.woff2') format('woff2');
+    font-family: 'Garet', sans-serif;
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Book.woff') format('woff');
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Book.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Garet ExtraBold';
-    src: url('../font/Garet-Extrabold.woff') format('woff');
-    src: url('../font/Garet-Extrabold.woff2') format('woff2');
+    font-family: 'Garet ExtraBold', sans-serif;
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Extrabold.woff') format('woff');
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Extrabold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League Spartan', sans-serif;
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/leaguespartan-bold.woff') format('woff');
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/leaguespartan-bold.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'League Spartan';
-    src: url('../font/leaguespartan-bold.woff') format('woff');
-    src: url('../font/leaguespartan-bold.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Garet';
-    src: url('../fonts/Garet-Heavy.woff2') format('woff2'),
-         url('../fonts/Garet-Heavy.woff') format('woff');
+    font-family: 'Garet', sans-serif;
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Heavy.woff2') format('woff2'),
+         url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/Garet-Heavy.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -42,7 +42,7 @@ body{
 
 .logo {
     position: absolute;
-    top: 10vh;
+    top: 30vh;
     right: 6vw;
     width: 19vw;
     display: inline-block;
@@ -56,11 +56,11 @@ body{
 
 .bars {
     position: absolute;
-    top: 20vh;
+    top: 40vh;
     right: 15vw;
     width: 0.6vw;
     display: inline-block;
-    z-index: 2;
+    z-index: 0;
 }
 
 .bars img {
@@ -81,24 +81,54 @@ body{
 }
 
 .article1 {
-    background: url("../images/main-page/web-sleep.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+}
+
+.article1 .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.article1 .bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .article2 {
-    background: url("../images/main-page/man-sleepwitheyewear.png") no-repeat;
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
+    position: relative;
+}
+
+.article2 .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.article2 .bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
 }
 
 .content1,
 .content2 {
     width: 37vw;
     margin-left: 11vw;
-    margin-right: auto;    
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
 }
 
 .text-side-black {
@@ -112,15 +142,25 @@ body{
     color: #fff;
 }
 
-.text-side-black h1,
-.text-side-white h1 {
-    font-family: 'Garet ExtraBold';
+.text-side-black h1 {
+    font-family: 'Garet ExtraBold', sans-serif;
+    font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.4rem;
+    max-width: 40vw; 
+    color: #222;
+}
+.text-side-white h1 {
+    font-family: 'Garet ExtraBold', sans-serif;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.4rem;
+    max-width: 40vw; 
+    color: #fff;
 }
 
 .first-line {
-    font-size: 5.4vw;
+    font-size: 5vw;
 }
 
 .second-line {
@@ -135,17 +175,27 @@ body{
     font-size: 6vw;
 }
 
-.text-side-black p ,
-.text-side-white p {
-    font-family: 'Garet';
+.text-side-black p {
+    font-family: 'Garet', sans-serif;
     font-size: 1.3rem;
     line-height: 1.5;
     margin-bottom: 1.6rem;
+    max-width: 40vw; 
+    color: #222;
+}
+.text-side-white p {
+    font-family: 'Garet', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+    max-width: 40vw; 
+    color: #fff;
 }
 
 .read-more {
-    font-size: 1.7vw;
-    font-family: Garet ExtraBold;
+    font-size: 1.5vw;
+    font-weight: 600;
+    font-family: Garet ExtraBold, sans-serif;
     color: #5baa39;
     font-style: italic;
 }
@@ -157,7 +207,24 @@ body{
     grid-template-rows: auto auto;
     width: 100%;
     padding: 0rem 0vw;
-    background: url("../images/main-page/background.png") top center / cover no-repeat;
+    position: relative;
+}
+
+.article3 .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.article3 .bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
 }
 
 .top-area {
@@ -165,12 +232,15 @@ body{
     grid-template-columns: auto auto;
     align-items: center;
     padding: 0 11vw;
-    gap: 1vw; 
+    gap: 1vw;
+    position: relative;
+    z-index: 1;
 }
 
 .top-text {
-    font-size: 2.3vw;
-    font-family: Garet Extrabold;
+    font-size: 3vw;
+    font-weight: 800;
+    font-family: Garet Extrabold, sans-serif;
     letter-spacing: 0.3rem;
     line-height: 1.1;
 }
@@ -179,13 +249,16 @@ body{
     width: 18vw;
     height: auto;
     transform: scale(235%) translate(0vw, -8vh);
+    z-index: 6;
 }
 
 
 .middle-area {
     padding: 0 11vw;
-    font-family: Garet;
+    font-family: Garet, sans-serif;
     font-size: 1.6vw;
+    position: relative;
+    z-index: 1;
 }
 
 .green-banner {
@@ -194,6 +267,7 @@ body{
     background: #5baa39;
     color: white;
     font-weight: bold;
+    text-align: center;
     border-radius:0 0 2rem 2rem;
 }
 
@@ -204,7 +278,9 @@ body{
     align-items: center;
     gap: 2rem;
     padding: 0 11vw;
-    font-family: Garet;
+    font-family: Garet, sans-serif;
+    position: relative;
+    z-index: 1;
 }
 
 .left-box {
@@ -216,19 +292,28 @@ body{
 .triangle {
     width: 100%;
     height: 300px;
-    background: url("../images/main-page/infotriangle.png") center / contain no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.triangle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .right-box {
-    max-width: 310px;
-    font-size: 1.4vw;
+    max-width: 420px;
+    font-size: 1.1vw;
     line-height: 1.5;
     text-align: left;
     padding-top: 2vh;
 }
 
 .link {
-    font-family: Garet;
+    font-family: Garet, sans-serif;
     text-decoration: none;
     color: #ffe15c;
 }
@@ -246,7 +331,7 @@ body{
     color: #fff;
     font-size: 24px;
     font-weight: 700;
-    font-family: Garet;
+    font-family: Garet, sans-serif;
     letter-spacing: 0.2vw;
 }
 
@@ -274,11 +359,11 @@ body{
     }
 
     .article1 .bg-image {
-        background: url("../images/main-page/mobile-sleep.webp");
-        background-size: cover;
-        background-position: center;
         width: 100vw;
         height: 50vh;
+    }
+
+    .article1 .bg-image img {
         mask-image: linear-gradient(
             to bottom,
             rgba( 0, 0, 0, 1) 80%,
@@ -287,7 +372,7 @@ body{
     }
 
     .article2 .bg-image {
-        background: url("../images/main-page/man-sleepwitheyewear.png");
+        background: url("https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/images/main-page/man-sleepwitheyewear.png");
         background-size: cover;
         background-position: center;
         width: 100vw;
@@ -305,15 +390,17 @@ body{
     .content1 {
         width: 85vw;
         margin: 0 auto;
-        padding: 6vh 0 10vh;
+        padding: 56vh 0 10vh;
         text-align: center;
+        z-index: 5;
     }
 
     .content2 {
         width: 85vw;
         margin: 0 auto;
-        padding: 48vh 0 10vh;
+        padding: 54vh 0 10vh;
         text-align: center;
+        z-index: 5;
     }
 
     .text-side-black,
@@ -334,9 +421,15 @@ body{
     .text-side-black p,
     .text-side-white p {
         font-size: 1.1rem;
+        max-width: 100%;
     }
 
-    .text-side-white {
+    .text-side-black h1, .text-side-white h1 {
+        max-width: 100%;
+    }
+
+    .text-side-white p, .text-side-white h1 {
+        max-width: 100%;
         color: #000;
     }
 
@@ -359,6 +452,7 @@ body{
         flex-direction: column-reverse;
         text-align: center;
         padding: 0;
+        z-index: 5;
     }
 
     .top-image img {
@@ -383,10 +477,12 @@ body{
         margin-top: 5vh;
         padding: 0;
         text-align: center;
+        z-index: 5;
     }
 
     .middle-area {
         font-size: 2.6vw;
+        z-index: 5;
     }
 
     .triangle {
@@ -461,7 +557,7 @@ body{
         width: 80vw;
         margin-right: 11svw;
         margin-left: auto;
-        background: url("../images/main-page/infotriangle.webp") center / contain no-repeat;
+        background: url("https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/images/main-page/infotriangle.webp") center / contain no-repeat;
     }
 
     .read-more {

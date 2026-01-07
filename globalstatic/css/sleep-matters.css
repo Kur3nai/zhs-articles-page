@@ -18,7 +18,7 @@
 @font-face {
     font-family: 'League Spartan', sans-serif;
     src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/leaguespartan-bold.woff') format('woff');
-    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/leaguespartan-bold.woff2') format('woff2');
+    src: url('https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/font/leaguespartan-bold.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,16 +28,25 @@ html,
 body{
     margin: 0;
     padding: 0;
-    background-color: #efecec !important;
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;        
+    position: relative;   
+}
+
+.article-body, .article-header {
+    background-color:#efecec;
 }
 
 /* =================== IMAGE SETTINGS =================== */
 
 .logo {
     position: absolute;
-    top: 3vh;
-    left: 8vw;
-    width: 19vw;
+    top: 3rem;
+    left: 8rem;
+    width: 19rem;
     display: inline-block;
     z-index: 3;
 }
@@ -49,8 +58,8 @@ body{
 
 .line {
     position: absolute;
-    top: 15vh;
-    width: 56vw;
+    top: 8rem;
+    width: 45rem;
     display: inline-block;
     z-index: 3;
 }
@@ -65,9 +74,9 @@ body{
 .swoosh3,
 .swoosh4 {
     position: absolute;
-    top: 198.9vh;
-    right: 27vw;
-    width: 122vw;
+    top: 198.9rem;
+    right: 27rem;
+    width: 122rem;
     display: inline-block;
     z-index: 0;
     overflow: hidden;
@@ -82,42 +91,42 @@ body{
 }
 
 .swoosh1 {
-    top: 113vh;
-    right: 37vw;
-    width: 57vw;
+    top: 46rem;
+    right: 38rem;
+    width: 35rem;
     transform: rotate(106deg) scaleY(-1);
     transform-origin: center;
     z-index: 1;
 }
 
 .swoosh2 {
-    top: 137vh;
-    right: 64vw;
-    width: 42vw;
+    top: 64rem;
+    right: 50rem;
+    width: 29rem;
     transform-origin: center;
 }
 
 .swoosh3 {
-    top: 118vh;
-    right: -8vw;
-    width: 77vw;
-    transform: rotate(293deg) scaleY(-1);
+    top: 50rem;
+    right: -4rem;
+    width: 39rem;
+    transform: rotate(301deg) scaleY(-1);
     transform-origin: center;
 }
 
 .swoosh4 {
-    top: 193vh;
-    right: 35vw;
-    width: 76vw;
-    transform: rotate(165deg);
+    top: 96rem;
+    right: 43rem;
+    width: 37rem;
+    transform: rotate(170deg);
     transform-origin: center;
 }
 
 /* ================= ARTICLE HEADER ================= */
 
 .article-header {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 45rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -127,34 +136,38 @@ body{
 .article-header {
     background: url("https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/images/sleep-matters/web-sleep.png");
     background-size: cover;
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
+    max-width: 1200px;
 }
 
 .content1 {
-    width: 37vw;
-    margin-left: 7vw;
+    width: 28rem;
+    margin-left: 6rem;
     margin-right: auto;
-    padding-top: 20vh; 
+    padding-top: 2rem;
 }
 
 .text-side-black {
-    max-width: 40vw; 
+    max-width: 40rem; 
     color: #222;
 }
 
 .header {
-    font-family: 'Garet ExtraBold', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
     line-height: 1.1;
     margin-bottom: 1.4rem;
 }
 
 .first-line {
-    font-size: 4.4vw;
+    font-size: 3.7rem;
+    font-weight: 600;
 }
 
 .second-line {
-    font-size: 3.5vw;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 .text-side-black p {
@@ -165,7 +178,7 @@ body{
 }
 
 .read-more {
-    font-size: 1.7vw;
+    font-size: 1.7rem;
     font-weight: bold;
     color: #5baa39;
 }
@@ -174,11 +187,11 @@ body{
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(3, 28.9vw);
-    grid-template-rows: repeat(4, 25vh);
-    column-gap: 1.5vw;
-    row-gap: 2vh;
-    padding: 7vh 5vw;
+    grid-template-columns: repeat(3, 23rem);
+    grid-template-rows: repeat(4, 12rem);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 4rem 2rem;
     box-sizing: border-box;
     place-items: center;
     justify-content: center;
@@ -188,23 +201,20 @@ body{
     display:flex; 
     flex-direction: row; 
     flex-wrap: wrap;
-    justify-content: space-evenly; 
-    margin-top: 20vh; 
-    padding-bottom: 60px;
+    justify-content: center; 
+    margin-top: 2rem; 
+    gap: 10px;
 }
 
-.title {
-    font-family: Garet ExtraBold, sans-serif;
-    font-size: 1.9vw;
-}
 
 .text-heading,
 .text-body {
-    font-family: Garet, sans-serif;
-    font-size: 1.2vw;
+    font-family: 'Garet', sans-serif;
+    font-size: 1rem;
 }
 
 .text-heading {
+    font-family: 'Garet Extrabold', sans-serif;
     font-weight: 600;
 }
 
@@ -231,20 +241,20 @@ body{
 .div11,
 .div12,
 .div13 {
-    max-width: 20vw;
-    font-size: 1.4vw;
+    max-width: 20rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     text-align: left;
-    padding-top: 2vh;
+    padding-top: 2rem;
 }
 
 .div2 {
-    max-width: 25vw;
-    font-size: 1.4vw;
+    max-width: 25rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     text-align: left;
-    padding-top: 2vh;
-    padding-left: 5vw;
+    padding-top: 2rem;
+    padding-left: 1rem;
 }
 
 .div6,
@@ -261,56 +271,127 @@ body{
 }
 
 .div1 {
-    transform: translate(0, 7vh);
+    transform: translate(0, 7rem);
 }
 
 .div10,
 .div11,
 .div12,
 .div13 {
-        max-width: 24vw;
-        padding: 0 2vw;
+        max-width: 18rem;
+        padding: 0 2rem;
 }
 
 .bold-text {
     font-family: Garet ExtraBold, sans-serif;
-    font-weight: 800;
-}
-
-.fold {
-    transform: translateY(-2920px);
 }
 
 .mid-folds {
     display: none;
 }
 
-/* ================= FOOTER ================= */
-.footer-wrapper {
-    background: #eae7e7;
+/* ================= EXHAUSTION ================= */
+.exhaustion {
+    background: #efecec;
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer {
-    background: #6dbd1e;
-    text-align: center;
-    padding: 28px;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 700;
-    border-radius: 50px 50px 0 0;
+.exhaustion-header {
+    display: flex;
+    flex-direction: row;
+}
+.exhaustion-header-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.margin-btm, exhaustion h5 {
+    color: #404040;
+    font-size: 22px;
+    font-family: 'Garet', sans-serif;
+    margin: 0 0 12px 0;
+}
+.exhaustion-text {
+    flex: 1.25;
 }
 
-.footer span {
-    color: #ffe15c;
+.exhaustion h1 {
+    font-size: 30px;
     font-weight: 800;
-    cursor: pointer;
+    margin: auto 0 22px 0;
 }
 
-.link {
-    text-decoration: none;
+.exhaustion p {
+    color: #404040;
+    font-size: 22px;
+    max-width: 700px;
+    line-height: 1.55;
+    margin-bottom: 16px;
+}
+
+/* colored emphasis text */
+.depth {
+    color: #90ba3e;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.rhythm {
+    color: #409ed9;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.restoration {
+    color: #3cb2c4;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.product {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.product img {
+    width: 100%;
+}
+
+@media (max-width: 1050px) {
+
+    .title {
+        font-size: 1.5vw;
+    }
+    .parent {
+        grid-template-columns: repeat(3, 30vw);
+        grid-template-rows: repeat(4, 18vh);
+    }
+
+    .div10, .div11, .div12, .div13 {
+        max-width: 21vw;
+        padding: 0 0rem;
+    }
+
+    .text-heading, .text-body {
+        font-size: 1.4vw;
+    }
+
+    .header {
+        font-size: 6vw;
+    }
 }
 
 @media (max-width: 768px) {
+
+    .logo {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        width: 9rem;
+    }
 
     .line {
         top: 9vh;
@@ -350,6 +431,7 @@ body{
         height: auto;
         min-height: 100vh;
         background: none;
+        max-width: fit-content;
     }
 
     /* IMAGE BANNER HEIGHT */
@@ -374,11 +456,12 @@ body{
 
     .content1 {
         width: 85vw;
-        margin: 0 auto;
         padding: 6vh 0 10vh;
         text-align: center;
         justify-self: center;
         text-align: center;
+        margin-left: 2rem;
+        margin-right: auto;
     }
 
     .text-side-black {
@@ -410,9 +493,10 @@ body{
     .parent2 {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: unset;
         padding: 0 5vw 5vh 5vw;
         margin-top: 0;
+        gap: 1rem;
     }
 
     .parent2 > div {
@@ -444,7 +528,7 @@ body{
     .div13 {
         justify-self: center;
         text-align: center;
-        max-width: 30vw;
+        max-width: 18rem;
         padding: 0;
     }
 
@@ -452,8 +536,8 @@ body{
     .div11,
     .div12,
     .div13 {
-        max-width: 33vw;
-        padding: 0 5vw;
+        max-width: 42vw;
+        padding: 0;
     }
     .div1 {
     transform: translate(0, 30vh)
@@ -490,24 +574,22 @@ body{
 
     .fold1,
     .fold2 {
-        width: 40vw;
+        width: 11rem;
     }
 
     .fold1 {
-        transform: translate(0vw, -30vh) rotate(180deg);
+        transform: translate(0vw, -15rem) rotate(180deg);
+    }
+
+    .fold2 {
+        transform:  scaleY(-1);
     }
 
 }
 
 
 /* ====================== MOBILE VIEW ====================== */
-@media (max-width: 480px) {
-    .footer {
-        font-size: 16px;
-        padding: 22px 16px;
-        border-radius: 24px 24px 0 0;
-    }
-}
+
 @media (max-width: 450px) {
     .swoosh1 {
         top: 128vh;
@@ -536,17 +618,14 @@ body{
     }
     
     .parent {
-        grid-row-gap: 4vh;
+        grid-row-gap: 1rem;
+        grid-column-gap: 1rem;
     }
 
     .text-heading, .text-body {
-        font-size: 2.9vw;
+        font-size: 1rem;
     }
 
-    .text-heading {
-        font-family: Garet ExtraBold, sans-serif;
-        font-weight: 800;
-    }
 
     .title {
         font-size: 2.9vw;
@@ -557,10 +636,24 @@ body{
         top: 7vh;
         width: 58vw;
     }
+
+    .fold1 {
+        transform: translate(0vw, -19rem) rotate(180deg);
+    }
+    .fold1,
+    .fold2 {
+        width: 10rem;
+    }
 }
 
 @media (max-width: 391px) {
     .logo {
-        width: 30vw;
+        width: 7rem;
+        top: 1rem;
+        left: 2rem;
+    }
+
+    .fold1 {
+        transform: translate(0vw, -23rem) rotate(180deg);
     }
 }

@@ -42,9 +42,9 @@ body{
 
 .logo {
     position: absolute;
-    top: 30vh;
-    right: 6vw;
-    width: 19vw;
+    top: 24vh;
+    right: 20vw;
+    width: 12vw;
     display: inline-block;
     z-index: 3;
 }
@@ -69,11 +69,14 @@ body{
 }
 
 /* ================= ARTICLE 1 & 2 ================= */
+.main-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .article1,
 .article2 {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -82,6 +85,7 @@ body{
 
 .article1 {
     position: relative;
+    height: 68vh;
 }
 
 .article1 .bg-image {
@@ -103,6 +107,7 @@ body{
 
 .article2 {
     position: relative;
+    height: 67vh;
 }
 
 .article2 .bg-image {
@@ -125,20 +130,20 @@ body{
 .content1,
 .content2 {
     width: 37vw;
-    margin-left: 11vw;
+    margin-left: 6vw;
     margin-right: auto;
     position: relative;
     z-index: 1;
 }
 
 .text-side-black {
-    max-width: 40vw; 
+    max-width: 400px;
     color: #222;
 }
 
 
 .text-side-white {
-    max-width: 40vw; 
+    max-width: 400px; 
     color: #fff;
 }
 
@@ -160,19 +165,19 @@ body{
 }
 
 .first-line {
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 .second-line {
-    font-size: 4vw;
+    font-size: 2.5vw;
 }
 
 .first-line-2 {
-    font-size: 5.4vw;
+    font-size: 3.7vw;
 }
 
 .second-line-2 {
-    font-size: 6vw;
+    font-size: 4vw;
 }
 
 .text-side-black p {
@@ -180,7 +185,7 @@ body{
     font-size: 1.3rem;
     line-height: 1.5;
     margin-bottom: 1.6rem;
-    max-width: 40vw; 
+    max-width: vw; 
     color: #222;
 }
 .text-side-white p {
@@ -188,12 +193,12 @@ body{
     font-size: 1.3rem;
     line-height: 1.5;
     margin-bottom: 1.6rem;
-    max-width: 40vw; 
+    max-width: 24vw; 
     color: #fff;
 }
 
 .read-more {
-    font-size: 1.5vw;
+    font-size: 20px;
     font-weight: 600;
     font-family: Garet ExtraBold, sans-serif;
     color: #5baa39;
@@ -210,7 +215,7 @@ body{
     position: relative;
 }
 
-.article3 .bg-image {
+.article3 .bg-image, .bottom-area .bg-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -220,64 +225,104 @@ body{
     overflow: hidden;
 }
 
-.article3 .bg-image img {
+.article3 .bg-image img, .bottom-area .bg-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top center;
 }
 
-.top-area {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    padding: 0 11vw;
-    gap: 1vw;
-    position: relative;
-    z-index: 1;
+/* ================= EXHAUSTION ================= */
+.exhaustion {
+    margin: 0 6vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
 }
 
-.top-text {
-    font-size: 3vw;
+.exhaustion-header {
+    display: flex;
+    flex-direction: row;
+}
+.exhaustion-header-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.margin-btm, exhaustion h5 {
+    color: #404040;
+    font-size: 22px;
+    font-family: 'Garet', sans-serif;
+    margin: 0 0 12px 0;
+}
+.exhaustion-text {
+    flex: 1.25;
+}
+
+.exhaustion h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
     font-weight: 800;
-    font-family: Garet Extrabold, sans-serif;
-    letter-spacing: 0.3rem;
-    line-height: 1.1;
+    margin: auto 0 22px 0;
 }
 
-.top-image img {
-    width: 18vw;
-    height: auto;
-    transform: scale(235%) translate(0vw, -8vh);
-    z-index: 6;
+.exhaustion p {
+    font-family: 'Garet', sans-serif;
+    color: #404040;
+    font-size: 22px;
+    max-width: 700px;
+    line-height: 1.55;
+    margin-bottom: 16px;
 }
 
+/* colored emphasis text */
+.depth {
+    color: #90ba3e;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
 
-.middle-area {
-    padding: 0 11vw;
-    font-family: Garet, sans-serif;
-    font-size: 1.6vw;
-    position: relative;
-    z-index: 1;
+.rhythm {
+    color: #409ed9;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.restoration {
+    color: #3cb2c4;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.product {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.product img {
+    width: 100%;
 }
 
 .green-banner {
+    font-family: 'Garet', sans-serif;
     margin-top: 2rem;
-    padding: 1rem 1.2rem;
+    padding: 1rem 1.3rem;
     background: #5baa39;
     color: white;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     border-radius:0 0 2rem 2rem;
 }
 
 .bottom-area {
-    margin-top: 3rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    gap: 2rem;
-    padding: 0 11vw;
+    margin: 0 auto 0rem auto;
+    padding: 100px 0;
+    max-width: 1200px;
     font-family: Garet, sans-serif;
     position: relative;
     z-index: 1;
@@ -295,6 +340,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 5;
 }
 
 .triangle img {
@@ -306,10 +352,12 @@ body{
 
 .right-box {
     max-width: 420px;
-    font-size: 1.1vw;
+    font-size: 22px;
+    margin-left: -20%;
     line-height: 1.5;
     text-align: left;
     padding-top: 2vh;
+    z-index: 5;
 }
 
 .link {
@@ -364,6 +412,7 @@ body{
     }
 
     .article1 .bg-image img {
+        object-position: right !important;
         mask-image: linear-gradient(
             to bottom,
             rgba( 0, 0, 0, 1) 80%,
@@ -372,7 +421,6 @@ body{
     }
 
     .article2 .bg-image {
-        background: url("https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/images/main-page/man-sleepwitheyewear.png");
         background-size: cover;
         background-position: center;
         width: 100vw;
@@ -384,6 +432,10 @@ body{
             rgba(0, 0, 0, 1) 5%, 
             rgba(0, 0, 0, 1) 61%, 
             rgba(0, 0, 0, 0) 97%);
+    }
+
+    .article2 .bg-image img {
+            object-position: 30% 0 !important;
     }
 
     /* TEXT CONTAINER */
@@ -405,17 +457,18 @@ body{
 
     .text-side-black,
     .text-side-white {
+        line-height: unset;
         max-width: 100%;
     }
 
     .first-line,
-    .first-line-2 {
-        font-size: 9vw;
+    .second-line-2 {
+        font-size: 26px;
     }
 
     .second-line,
-    .second-line-2 {
-        font-size: 7vw;
+    .first-line-2 {
+        font-size: 22px;
     }
 
     .text-side-black p,
@@ -425,6 +478,7 @@ body{
     }
 
     .text-side-black h1, .text-side-white h1 {
+        line-height: 0.8;
         max-width: 100%;
     }
 
@@ -434,8 +488,28 @@ body{
     }
 
     .read-more {
-        font-size: 2.5vw;
+        font-size: 1.2rem;
     }
+/* ============================= EXHAUSTION ============================= */
+     .exhaustion-header {
+        flex-direction: column-reverse;
+     }
+
+     .exhaustion-header-text {
+        width: auto;
+     }
+
+     .exhaustion h1 {
+        font-size: 26px;
+     }
+
+     .exhaustion p {
+        font-size: 1.1rem;
+     }
+
+     .green-banner {
+        font-size: 1.1rem;
+     }
 
     /* ARTICLE 3 RESET */
     .article3 {
@@ -474,10 +548,10 @@ body{
         flex-direction: column;
         align-items: center;
         gap: 3vh;
-        margin-top: 5vh;
-        padding: 0;
+        padding: 3vh 0;
         text-align: center;
         z-index: 5;
+        margin-top: -2px;
     }
 
     .middle-area {
@@ -486,8 +560,8 @@ body{
     }
 
     .triangle {
-        height: 200px;
-        width: 65vw;
+        height: 300px;
+        width: 100vw;
         background-size: contain;
         transform: translate(10vw);
     }
@@ -495,10 +569,11 @@ body{
     .right-box {
         max-width: none;
         width: 75vw;
-        font-size: 3vw;
+        font-size: 1.1rem;
         line-height: 1.4;
         text-align: center;
         padding-top: 0;
+        margin: 0 auto;
     }
 
     /* ============================= FOOTER ============================= */
@@ -525,6 +600,9 @@ body{
 /* ====================== MOBILE VIEW ====================== */
 
 @media (max-width: 390px) {
+    .article1 .bg-image {
+        position: relative;
+    }
 
     .content1 {
         padding: 6vh 0 5vh;
@@ -551,20 +629,38 @@ body{
     .logo {
         width: 30vw;
     }
+
+    .margin-btm {
+        font-size: 18px;
+    }
     
     .triangle {
         height: 150px;
-        width: 80vw;
+        width: 110vw;
         margin-right: 11svw;
         margin-left: auto;
-        background: url("https://d2nt2stsaqz8ux.cloudfront.net/globalstatic/images/main-page/infotriangle.webp") center / contain no-repeat;
+    }
+
+/* ============================= EXHAUSTION ============================= */
+    .exhaustion {
+        padding: 50px 18px 0 18px;
+    }
+
+    .exhaustion h1 {
+        font-size: 22px;
+        line-height: 1.15;
+    }
+
+    .exhaustion p {
+        font-size: 18px;
+        line-height: 1.5;
     }
 
     .read-more {
-        font-size: 4svw;
+        font-size: 18px;
     }
 
     .article3 .read-more {
-        font-size: 3.5svw;
+        font-size: 18px;
     }
 }

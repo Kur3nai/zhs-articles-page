@@ -27,6 +27,11 @@ html {
     font-family: 'Garet', sans-serif;
     line-height: 1.4;
     position: static;
+    max-width: 1200px !important;
+    margin: 0 auto;
+}
+.page4 {
+  padding-top:20px;
 }
 
 
@@ -34,35 +39,35 @@ h2, p{
     padding: 0;
     margin: 0;
     font-size: clamp(15px, 1.2vw, 17px);
-    font-weight: 600;
 }
 h2{
     font-family: Garet-Extrabold, sans-serif;
 }
 .bold{
     font-family: Garet-Extrabold, sans-serif;
-    font-size: 1.3vw;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 600;
 }
 .main-container {
     max-width: 100%;
     height: auto;
-    padding: 10px 20px; 
     position: relative;
-    margin: auto 20px;
     box-sizing: border-box;
 }
 
 .content-area, .content2-area {
-    padding: 1vh 0;
+    padding: 1vh 0 0 0;
     margin: auto;
     max-width: 90%;
     position: relative;
 }
 
+.para-title {
+    margin: 12px 0 0 0;
+}
 
 .header-area {
-    margin-top: 30px;
+    margin: 0 10px 30px 0;
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -199,8 +204,8 @@ h2{
 }
 .page5{
     width:100%;
-    margin: 15px auto;
-    margin-bottom: 50px;
+    margin: 15px auto 0 auto;
+    padding-bottom: 25px;
 }
 
 .email-link {
@@ -244,7 +249,8 @@ h2{
     }
    
     .page5{
-        width:80%;
+        width: 100%;
+        margin: 0 0 8px 0px;
     }
 }
 
@@ -316,7 +322,7 @@ h2{
         align-items: center;
     }
     .main-container {
-        margin: 100px auto ;
+        margin: 100px auto 0 auto;
         margin-top: 0;
     }
 
@@ -363,7 +369,7 @@ h2{
     }
 
     .bold{
-        font-size: 3.3vw;
+        font-size: 4vw;
     }
 
     .invLogo {
@@ -429,7 +435,7 @@ h2{
 
         .bold{
             font-family: Garet-Extrabold, sans-serif;
-            font-size: 3vw;
+            font-size: 4vw;
         }
 
         .grid-item3 .icon{
